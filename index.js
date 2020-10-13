@@ -9021,4 +9021,8 @@ const openIssues = issues
     return openIssues
   }, [])
   
-  const nonAutomaticIssues = issues.reduce((totalIssues, count) => total + count, 0);
+  const nonAutomaticIssues = issues.reduce((totalIssues, issue) => {
+    const isAutomaticIssue = issue.body.includes('automatically created by learn.co') 
+    
+    if ()
+  }
