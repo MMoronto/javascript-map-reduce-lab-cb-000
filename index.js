@@ -9013,4 +9013,4 @@ const issues = [
 
 
 const openIssues = issues
-  .map(())
+  .map(issue => ())
