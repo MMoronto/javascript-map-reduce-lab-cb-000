@@ -9021,4 +9021,4 @@ const openIssues = issues
     return openIssues
   }, [])
   
-  const nonAutomaticIssues = issues.reduce((total, count) => total + count, 0);
+  const nonAutomaticIssues = issues.reduce((totalIssues, count) => total + count, 0);
