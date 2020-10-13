@@ -9020,3 +9020,5 @@ const openIssues = issues
     
     return openIssues
   }, [])
+  
+  const nonAutomaticIssues = 
