@@ -9013,4 +9013,6 @@ const issues = [
 
 
 const openIssues = issues
-  .map(issue => ())
+  .map(issue => Object.assign({}, issue, {
+    issue.state
+  }))
