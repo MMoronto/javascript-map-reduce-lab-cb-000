@@ -9012,4 +9012,5 @@ const issues = [
     .reduce((total, count) => total + count, 0);
 
 
-const 
+const openIssues = issues
+  .reduce(())
