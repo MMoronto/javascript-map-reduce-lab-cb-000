@@ -9013,6 +9013,10 @@ const issues = [
 
 
 const openIssues = issues
-  .map(issue => Object.assign({}, issue, {
-    state: issue.state == open
-  }))
+  .reduce((openIssue, issue) => {
+    if (issue.state === 'open') {
+      return [...openIssues, issue]
+    }
+    
+    return openIssues
+  }, [])
